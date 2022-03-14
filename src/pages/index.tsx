@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
 
   const formattedData = useMemo(() => {
     const formatted = data?.pages.flatMap(imageData => {
-      return imageData.data.flat();
+      return imageData.data;
     });
 
     return formatted;
